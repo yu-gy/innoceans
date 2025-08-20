@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이노션에스</title>
+    <link rel="stylesheet" href="css/01_index.css">
+    <script>
+        window.onload = () => {
+            document.querySelector('.nav_btn').addEventListener('click', () => {
+                document.querySelector('.nav_mobile').classList.add('active');
+            });
+            document.querySelector('.close_btn').addEventListener('click', () => {
+                document.querySelector('.nav_mobile').classList.remove('active');
+            });
+        };//script end
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </h1> <!-- logo end -->
+
+            <nav class="nav_pc pc">
+                <ul class="gnb">
+                    <li><a href="#">ABOUTS</a></li>
+                    <li><a href="#">WORKS</a></li>
+                    <li><a href="#">SOLUTUONS</a></li>
+                    <li><a href="#">INSIGHTS</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">CINTACTS</a></li>
+                </ul><!-- gnb end -->
+            </nav><!--  nav_pc pc end-->
+
+            <ul class="lang pc">
+                <li><a href="#">KOR</a></li>
+                <li><a href="#">ENG</a></li>
+            </ul><!--lang pc  end-->
+
+            <button class="nav_btn mobile">
+                <img src="img/icons8-메뉴-50.png" alt="메뉴보기">
+            </button><!-- nav_btn mobile end -->
+
+            <nav class="nav_mobile mobile">
+                <button class="close_btn">
+                    <img src="img/icons8-엑스-50.png" alt="메뉴닫기">
+                </button><!-- close_btn end -->
+
+                <ul class="gnb">
+                    <li><a href="#">ABOUTS</a></li>
+                    <li><a href="#">WORKS</a></li>
+                    <li><a href="#">SOLUTUONS</a></li>
+                    <li><a href="#">INSIGHTS</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">CINTACTS</a></li>
+                </ul><!-- gnb end -->
+
+                <ul class="lang">
+                    <li><a href="#">KOR</a></li>
+                    <li><a href="#">ENG</a></li>
+                </ul><!--lang end-->
+            </nav><!--  nav_mobile mobile end-->
+        </div><!-- inner end -->
+    </header><!-- header end -->
+
+    <main class="main"> 
+        <section class="main_visual">
+            <img src="img/image.png" alt="">
+        </section><!-- main_visua end -->
+    </main><!-- main end -->
+</body>
+
+</html>
